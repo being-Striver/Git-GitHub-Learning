@@ -1,0 +1,48 @@
+#Tracking your files
+
+--Each file in your  working directory can be in one of the two states: tracked and untracked
+
+--Trcaked files are files that Git knows about.
+--Any file in your working directory that was not in your last snapshot and is not in your staging area is untracked files.
+
+#below are the commands how to add file or how to stage file.
+
+--for specific file
+git add <file-name>
+
+--for all files and folder
+git add . (here dot always refers to current directory)
+
+
+#commit changes
+
+--moving files from stage area to the git folder is called commit.
+--making commits, creates version/snapshots of your projects.
+
+--committing changes
+git commit -m "your commit message"
+  here -m is flag which stands for message.
+
+
+#Lifecycle of the status of a file:
+
+untracked --> unmodified  --> modified  --> stage
+
+if you do commit to staged file,it becomes unmodified.
+
+Note: once you have made some changes to the file, make sure to add that file again to stage area otherwise commit would not happen. Git 
+      will not able to understand the changes you have made to that file.
+
+
+#git logging
+
+--viewing the commit history
+   git log
+
+ The most recent commit will at the top.
+
+  git log -oneline
+
+#Deleting a git project:
+ rm -rf .git
+ 
