@@ -49,5 +49,15 @@ Note: once you have made some changes to the file, make sure to add that file ag
 
 #Additional git commands
 
+--skipping the staging area
+  git commit -a -m "commit message"
 
+--git diff
+ if you want to know exactly what you have changed, not just which files were changed - you can use the "git diff" command.
+
+ Note: once you staged your file, you won't be able to see diffrence between previous commit and current change.
+
+ if you want to see the changes that you have staged just right now and commits that was already there in the previous one, you can use 
+ below command.
+  git diff -staged 
  
