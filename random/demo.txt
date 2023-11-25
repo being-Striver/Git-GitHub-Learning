@@ -1,0 +1,2 @@
+Welcome to the world of git and version management.
+Learn basic git command and its implications on developements
