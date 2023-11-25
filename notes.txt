@@ -45,4 +45,9 @@ Note: once you have made some changes to the file, make sure to add that file ag
 
 #Deleting a git project:
  rm -rf .git
+
+
+#Additional git commands
+
+
  
