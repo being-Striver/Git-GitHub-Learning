@@ -1,0 +1,3 @@
+Welcome the GIT DEMO
+We gonna learn GIT and Versioning of code.
+we gonna learn on developers git commit process
