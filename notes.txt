@@ -90,8 +90,97 @@ Note: git doesn't keep track of empty folder.
 --------------------------------
  -git restore --unstaged <file-name> 
 
- -git checkout --<filename>
+ -git checkout -- <filename>
   this command will takes your file to last version/commit.
+  Note: When files are modified and not commited then only you can only run above command.
+
+  -git checkout -f 
+  it will rollback to the previous commit. loosing all newly modified files.
+
+
+#setiing alias
+-git config --global alias.st status
+
+  it will put alias of status as st.
+
+
+#Non linear development
+--------------------------
+
+  #Branching
+  -------------
+  what is branching?
+  -A branch is simply a lightweight moveable pointer to one of the commits. The default branch name in git is master.
+  - branching : diverging from the main branch.
+   
+  why branching is required?
+  -------------------------
+  suppose two diffrent person working on third party project.In that case, third party would not allow them to directly commit code in 
+  master branch. so in that case, they gonna create branch from the master branch and after that they can make start working. but code
+  will not reflect into the master branch. for that third party have to merge the branch.
+
+  Creating new branch:
+  --------------------
+  Always remember head goes to the last commit.
+
+  To see branch:
+   -git branch
+  
+  To see last commit to branch
+   -git branch -v
+
+  to create a new branch:
+   - git branch <branch-name>
+
+  Switching to branches:
+  ----------------------
+  moving between branches:
+  * shows in which branch currently I am in.
+
+  checkout an existing branch:
+   - git checkout <branch-name>
+   When you write checkout, checkout takes you to the existing branch.
+
+   When you run "git log", you will see head is pointing to development branch.
+   press "q" to come out of it.
+
+   creating and checkout new branch:
+  ----------------------------------
+    - git checkout -b <branch-name>
+
+    Here '-b' says that create a new branch and directly go to that branch.
+
+
+#working with branching:
+------------------------
+Whatever changes you make in development branch,it won't show in master branch unless it is merged. Once branch is created at certain 
+point of commits on master branch, development branch can only see files or changes upto that commit. After that whatever changes made 
+on master branch, won't be shown in development branch.
+
+#branch logging:
+------------------
+Suppose you have made some changes in development branch and you want to switch into diffrent branch without commiting it, you won't be
+able to do that. You have to save it and commit it before switching into diffrent branch.
+
+--git log --oneline --graph --all
+this command shows all the branches in a pictorial representation like a tree because we have non-linear development.
+
+
+#Deleting branch:
+--------------------
+deleting a merged branch:
+ - git branch -d <branch-name>
+
+deleting a non-merged branch:
+ - git branch -D <branch-name>
+
+
+
+#Non linear development: Merging
+--------------------------------------
+
+
+
 
 
  
