@@ -178,7 +178,34 @@ deleting a non-merged branch:
 
 #Non linear development: Merging
 --------------------------------------
+so to merge any branch, run below git command from master branch:
+ -git merge <branch-name-you-want-to-merge>
 
+this will update the master branch successfully.
+
+
+
+
+#Merge conflicts:
+----------------------
+changes in a file made by 2 diffrent branches, trying to get merge results in a merge conflicts.
+
+
+
+#Git branching workflow in production:
+----------------------------------------
+Long running branches:
+  -master
+  -development
+
+Topic branches:(also known as short term branches)
+  -Authentication
+  -UI changes
+
+#Rebasing:
+--------------
+Integrate changes from one branch into another.
+The eventual outcome would be same as merging, but the process of integrating the changes are diffrent.
 
 
 
