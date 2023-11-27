@@ -207,6 +207,27 @@ Topic branches:(also known as short term branches)
 Integrate changes from one branch into another.
 The eventual outcome would be same as merging, but the process of integrating the changes are diffrent.
 
+How Git perform rebasing internally?
+-pointer goes to the common ancestor of the two branches.
+-gets the diff introduced by each commit of the branch you're on.
+-saving those diffrences in temporary files.
+-resetting the current branch to the same commit as branch you are rebasing onto.
+-finally applying each change in turn.
+
+Let's understand how we update our master branch to the recent commit that the experiment branch has done.
+
+
+
+
+
+
+
+#Github
+--------------
+A central repository
+
+
+
 
 
 
