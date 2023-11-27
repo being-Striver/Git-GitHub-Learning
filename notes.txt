@@ -224,7 +224,30 @@ Let's understand how we update our master branch to the recent commit that the e
 
 #Github
 --------------
-A central repository
+A central repository.
+
+--create a new repository on the command line:
+echo "# first-github-repository" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit"
+git branch -M main (optional. It will rename matser branch to main)
+git remote add origin https://github.com/being_striver/first-github-project.git 
+git push -u origin master 
+
+
+#personal access token:
+-----------------------
+Whenever you want to push your code to central repository like github, you have to authenticate yourself.
+
+From August 2021 onwards, github no longer accepting username and password based Authentication due to security risks.
+Now user have to use username and personal access token(PAT) for Authentication which is more secure.
+
+for generating PAT, you can go to github account and go to setting and go to developers setting and generate personal access token.
+Make sure, you have saved the personal access token.
+
+
+PAT : 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
 
 
 
